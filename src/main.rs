@@ -1,3 +1,10 @@
+mod buttonFactory;
+use buttonFactory::bFactory::ButtonFactory;
+
 fn main() {
-    println!("Hello, world!");
+    let factory = ButtonFactory{};
+    let redButton = factory.redButton();
+    let blueButton = factory.blueButton();
+    redButton.click();
+    blueButton.click();
 }
